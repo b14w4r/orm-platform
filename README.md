@@ -1,6 +1,5 @@
 # ORM learning project (Spring Boot + JPA)
 
-Минимальный набор под ТЗ: **3 сценария** + CRUD для **2–3 сущностей**.
 
 ## Quick start
 
@@ -8,8 +7,6 @@
 docker compose up -d
 mvn spring-boot:run
 ```
-
-Swagger UI: `/swagger-ui.html`.
 
 ## Main endpoints
 
@@ -36,14 +33,9 @@ Scenarios:
 - POST /api/assignments/{assignmentId}/submit
 - POST /api/quizzes/{quizId}/take
 
-## Demo data
-
-При старте подхватывается `data.sql` (создаёт users/categories/course/module/lesson/assignment/quiz/questions/options).
 
 ## Tests
 
 ```bash
 mvn test
 ```
-
-Тесты используют Testcontainers и поднимают PostgreSQL автоматически.
